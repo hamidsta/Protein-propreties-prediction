@@ -177,7 +177,7 @@ weighted avg       0.78      0.65      0.69      1500
 
 ### Compare all 3 model with statistical measure 
 
-* find_best_model_AUC() : Output the statistics ( T-tes)  related to each model *AUC score* , and represent a way to check wich model perform the best. This function will perform 5 split with different rand [126, 84, 42, 21, 11, 6 , 3] on the training set . For each slice , the AUC score will be save inside a dict(). At the end , i will perform a t-test through stats.ttest_rel to output the significance between the different AUC score of each model . 
+* **find_best_model_AUC()** : Output the statistics ( T-test)  related to each model  through *AUC score* , and represent a way to check wich model perform the best. This function will perform 5 split with different rand [126, 84, 42, 21, 11, 6 , 3] on the training set . For each slice , the AUC score will be save inside a dict(). At the end , i will perform a t-test through stats.ttest_rel to output the significance between the different AUC score of each model . 
  
  * output : 
 	* Linear regression against XGBOOST : 
