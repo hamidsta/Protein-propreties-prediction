@@ -18,7 +18,9 @@ Since it is a binary classification problem , i decide  to implement 3 model , f
 
 ---
 ## Running the model : 
-inside main.py function , set _file_dir_ with path of csv with data to process and _output_dir_  as folder path to store plot
+inside main.py function, set:
+* _file_dir_ as path of csv with data to process 
+* _output_dir_  as folder path to store plot
 
 ```python
 file_dir='D:/ROSALIND_problems/Servier_test/dataset_single.csv'
@@ -235,4 +237,4 @@ All 3 model perform in average   ~ 70 % of AUC score  as plotted in the plot_roc
 
 
 ## Perspective 
-I also tested other method for tuning hyperparameters like _optuna_ . It might be good to check the litterature about this approach , and see if it actual outperform in term of computation time / accuracy , compare to more regular approach 
+I also tested other method for tuning hyperparameters like _optuna_ . It might be good to check the litterature about this approach , and see if it actual outperform in term of computation time / accuracy , other more 'regular' approach 
