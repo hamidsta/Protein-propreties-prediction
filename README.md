@@ -80,37 +80,47 @@ final_thune={'rf': {'n_estimators': 288,     # here  is the output of the best m
 
 * **fit_and_run()**  : Will take as input the best Hyper parameters for each model.Inside this function,  the best parameters for each 3 model of the function 'run_all_thunes' will be run in order to test the AUC score and classification report  for the initial training set and the initial testing set , in order to check if it overfit or not . Here is the related output : 
 
-* For Linear regression :   _lr_fit = fit_and_run(x_train, y_train, y_test,x_test,final_thune,'linear_model')_
+* For **Linear regression** :   _lr_fit = fit_and_run(x_train, y_train, y_test,x_test,final_thune,'linear_model')_
 
-	* Here is the AUC score for TRAINING 0.8231577480490524
-	* Here is the AUC score for TESTING 0.6791389109112393
+	* Here is the AUC score for TRAINING : 0.8231577480490524
+	* Here is the AUC score for TESTING : 0.6791389109112393
 
-	* Here is the classification report for TRAINING :
+	* Here is the classification report for TRAINING/TESTING :
 
-              precision    recall  f1-score   support
-           0       0.37      0.77      0.50       624
-           1       0.94      0.72      0.81      2875
+```python
+#  TRAINING set classification report 
+	
+              	precision    recall  f1-score   support
+     0             0.37      0.77      0.50       624
+     1             0.94      0.72      0.81      2875
     accuracy                           0.73      3499
    macro avg       0.66      0.75      0.66      3499
-weighted avg       0.84      0.73      0.76      3499
+weighted avg       0.84      0.73      0.76      3499 
 
-	* Here is the classification report for TESTING :
+```
 
-              precision    recall  f1-score   support
+```python
+#  TESTING set classification report 
+
+             	 precision    recall  f1-score   support
            0       0.28      0.57      0.37       267
            1       0.88      0.67      0.76      1233
     accuracy                           0.66      1500
    macro avg       0.58      0.62      0.57      1500
 weighted avg       0.77      0.66      0.69      1500
+```
 
 
+* For **Random forest Classifier** :  _rf_fit = fit_and_run(x_train, y_train, y_test,x_test,final_thune,'RandomForestClassifier')_
 
-* For Random forest Classifier :  _rf_fit = fit_and_run(x_train, y_train, y_test,x_test,final_thune,'RandomForestClassifier')_
+	* Here is the AUC score for TRAINING : 0.8864347826086957
+	* Here is the AUC score for TESTING : 0.6804389889766745
 
-	* Here is the AUC score for TRAINING 0.8864347826086957
-	* Here is the AUC score for TESTING 0.6804389889766745
+	* Here is the classification report for TRAINING/TESTING : 
 
-	* Here is the classification report for TRAINING 
+```python
+#  TRAINING set classification report 
+
 
               precision    recall  f1-score   support
            0       0.48      0.75      0.58       624
@@ -119,38 +129,49 @@ weighted avg       0.77      0.66      0.69      1500
    macro avg       0.71      0.79      0.73      3499
 weighted avg       0.86      0.81      0.82      3499
 
-	* Here is the classification report for TESTING  
+```
 
-             precision    recall  f1-score   support
+```python
+#  TESTING set classification report 
+
+            	 precision    recall  f1-score   support
            0       0.29      0.49      0.36       267
            1       0.87      0.74      0.80      1233
     accuracy                           0.69      1500
    macro avg       0.58      0.61      0.58      1500
 weighted avg       0.77      0.69      0.72      1500
 
+```
 
-* For Xgboost Classifier  : _xgb_fit = fit_and_run(x_train, y_train, y_test,x_test,final_thune,'XGBClassifier')_
+* For **Xgboost Classifier**  : _xgb_fit = fit_and_run(x_train, y_train, y_test,x_test,final_thune,'XGBClassifier')_
 
 	* Here is the AUC score for TRAINING 0.8514782608695652
 	* Here is the AUC score for TESTING 0.6906391341723089
 	* Here is the classification report for TRAINING     
 
-          precision    recall  f1-score   support
+```python
+#  TRAINING set classification report 
+
+          	precision    recall  f1-score   support
            0       0.39      0.80      0.52       624
            1       0.94      0.72      0.82      2875
     accuracy                           0.74      3499
    macro avg       0.66      0.76      0.67      3499
 weighted avg       0.84      0.74      0.77      3499
 
-	* Here is the classification report for TESTING 
+```
 
-              precision    recall  f1-score   support
+```python
+#  TESTING set classification report 
+
+		precision    recall  f1-score   support
            0       0.28      0.63      0.39       267
            1       0.89      0.66      0.76      1233
     accuracy                           0.65      1500
    macro avg       0.59      0.64      0.57      1500
 weighted avg       0.78      0.65      0.69      1500
 
+```
 
 ---
 
