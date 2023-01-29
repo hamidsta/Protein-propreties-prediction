@@ -18,15 +18,30 @@ Since it is a binary classification problem , i decide  to implement 3 model , f
 
 ---
 ## Running the model : 
-inside main.py function, set:
-* _file_dir_ as path of csv with data to process 
-* _output_dir_  as folder path to store plot
+In order to run the model , type on your terminal : 
 
 ```python
-file_dir='D:/ROSALIND_problems/Servier_test/dataset_single.csv'
-output_dir = 'D:/ROSALIND_problems/Servier_test'
+python main.py 
 ```
 
+* When _Put the path of the CSV file who contain the value to predict_ : The user need to put the path to the CSV file, need to be the same format as the one use for the technical test . 
+* When _Put existing path were plot will be stored_ : The user need to put the path to the directory where the plot will be stored 
+* When _Put CSV file whith smile molecule to predict_ , the user need to put the path to the CSV file. The CSV file need to be on the same format than the one use for the technical test , with the same Col Names. Exemple of input set by the user : _D:/Hamid/Servier_test/dataset_single.csv_
+
+
+Main.py will allow the user to perform :
+
+```python
+              1) Testing / training Linear model 
+              2) Testing / training Randomforest classifier
+              3) Testing / training XGBOOST classifier
+              4) Test statistics 
+              5) Plot ROC curve and learning_curves
+              6)  User to predict the property P1 for any given smile using  Linear model 
+              7)  User to predict the property P1 for any given smile using  Randomforest classifier
+              8)  User to predict the property P1 for any given smile using  XGBOOST classifier
+              9) Quit 
+```         
 
 ---
 
