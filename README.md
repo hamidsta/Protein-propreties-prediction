@@ -222,7 +222,7 @@ Both of this function will be run on the train data. **output_dir** need to be s
 
 ### Predict P1 proprety for any given smile molecule  
 
-In order to predict the P1 propreties for any molecule , re use the already trained model ( _xgb_fit_ , _rf_fit_ , _lr_fit_ ) for any given smile molecule , run : 
+In order to predict the P1 propreties for any molecule , re use the already trained model ( _xgb_fit_ , _rf_fit_ , _lr_fit_ ) for any given smile molecule : 
 
 ```python
 
