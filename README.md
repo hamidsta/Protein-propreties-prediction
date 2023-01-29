@@ -74,7 +74,7 @@ All of those 3 tune function will be set inside :
 
 ```python
 
-final_thune={'rf': {'n_estimators': 288,     # here  is the output of the best model
+final_thune={'rf': {'n_estimators': 288,     # here  is the output of the best model based on grid search 
             'min_samples_split': 5,
             'min_samples_leaf': 6,
             'max_features': 'auto',
