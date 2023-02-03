@@ -1,4 +1,4 @@
-# Servier Data Science Technical Test
+# Protein properties prediction 
 <sub>Sta Abdelhamid M2 Genomics Informatics and Mathematics for Health and Environment,  Paris-Saclay university </sub>
 
 ---
