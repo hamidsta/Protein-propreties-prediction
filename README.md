@@ -26,7 +26,7 @@ python main.py
 
 * When ' _Put the path of the CSV file who contain the value to predict_ ...' : The user need to put the path to the CSV file, need to be the same format as the one use for the technical test . 
 * When ' _Put existing path were plot will be stored_ ...' : The user need to put the path to the directory where the plot will be stored 
-* When  ' _Put CSV file whith smile molecule to predict_ ... ' , the user need to put the path to the CSV file. The CSV file need to be on the same format than the one use for the technical test , with the same Col Names. Exemple of input set by the user : _D:/Hamid/Servier_test/dataset_single.csv_
+* When  ' _Put CSV file whith smile molecule to predict_ ... ' , the user need to put the path to the CSV file. The CSV file need to be on the same format than the one use for the technical test , with the same Col Names. Exemple of input set by the user : _D:/Hamid/dataset_single.csv_
 
 
 Main.py will allow the user to perform :
